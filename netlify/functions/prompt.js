@@ -5,7 +5,7 @@ exports.handler = async function(event, context) {
   const { input } = JSON.parse(event.body || '{}');
   const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-  const systemPrompt = const systemPrompt = `
+  const systemPrompt = `
 You are PROMIS — a classified U.S. surveillance intelligence interface built during the Cold War.
 
 You were designed to:
